@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { fetchCollection } from '../api.js'
 
+// API endpoint: https://${import.meta.env.VITE_CODESPACE_NAME}-8000.app.github.dev/api/leaderboard/
+
 export default function Leaderboard() {
   const [leaders, setLeaders] = useState([])
   const [error, setError] = useState('')
